@@ -3,7 +3,7 @@ persist.vendor.audio.fluence.voicecomm=false
 persist.vendor.audio.voicecall.speaker.stereo=true
 
 # Camera
-persist.vendor.camera.physical.num=3
+persist.vendor.camera.physical.num=4
 
 # Display
 debug.sf.supports_desired_transition_mode=1
