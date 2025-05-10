@@ -3,13 +3,13 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 
-DEVICE_PATH := device/motorola/bangkk
+DEVICE_PATH := device/motorola/rhodep
 
 # Inherit from motorola sm6375-common
 include device/motorola/sm6375-common/BoardConfigCommon.mk
 
 # Bootloader
-TARGET_BOOTLOADER_BOARD_NAME := bangkk
+TARGET_BOOTLOADER_BOARD_NAME := rhodep
 
 # HIDL
 ODM_MANIFEST_SKUS += b d de dn n
@@ -20,8 +20,8 @@ ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 
 # Kernel
-BOARD_KERNEL_CMDLINE += androidboot.hab.product=bangkk
-TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-bangkk.config
+BOARD_KERNEL_CMDLINE += androidboot.hab.product=rhodep
+TARGET_KERNEL_CONFIG += vendor/ext_config/moto-holi-rhodep.config
 
 # Kernel Modules
 BOARD_VENDOR_KERNEL_MODULES_LOAD := $(strip $(shell cat $(DEVICE_PATH)/modules.load))
@@ -50,4 +50,4 @@ BOARD_AVB_ROLLBACK_INDEX := 18
 BOARD_AVB_VBMETA_SYSTEM_ROLLBACK_INDEX := 18
 
 # inherit from the proprietary version
-include vendor/motorola/bangkk/BoardConfigVendor.mk
+include vendor/motorola/rhodep/BoardConfigVendor.mk

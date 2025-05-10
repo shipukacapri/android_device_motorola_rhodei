@@ -91,7 +91,7 @@ $(foreach DEVICE_SKU, $(NFC_DEVICE_SKUS), \
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.bangkk
+    sensors.rhodep
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
@@ -100,4 +100,4 @@ PRODUCT_COPY_FILES += \
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/bangkk/bangkk-vendor.mk)
+$(call inherit-product, vendor/motorola/rhodep/rhodep-vendor.mk)
