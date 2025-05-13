@@ -98,9 +98,19 @@ blocklist utags
 #
 
 blocklist fpsensor_spi_tee
+blocklist rbs_fps_mmi
+blocklist focal_fps_mmi
 blocklist fpc1020_mmi
 blocklist qpnp_adaptive_charge
-blocklist nova_0flash_mmi
-blocklist focaltech_0flash_v2_mmi
-blocklist mmi_smbcharger_iio
-blocklist mmi_parallel_charger_iio
+blocklist goodix_brl_mmi
+blocklist tcpc_class
+blocklist tcpc_rt1711h
+blocklist tcpc_sgm7220.ko
+blocklist rt_pd_manager
+blocklist mmi_charger
+blocklist mmi_discrete_charger_class
+blocklist mmi_discrete_charger
+blocklist sgm4154x_charger
+blocklist bq2589x_charger
+blocklist bq2597x_mmi_iio
+blocklist mmi_discrete_turbo_charger
