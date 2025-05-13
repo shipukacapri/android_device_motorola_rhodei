@@ -12,10 +12,9 @@ include device/motorola/sm6375-common/BoardConfigCommon.mk
 TARGET_BOOTLOADER_BOARD_NAME := rhodep
 
 # HIDL
-ODM_MANIFEST_SKUS += b d de dn n
+ODM_MANIFEST_SKUS += b d dn n
 ODM_MANIFEST_B_FILES := $(DEVICE_PATH)/sku/manifest_b.xml
 ODM_MANIFEST_D_FILES := $(DEVICE_PATH)/sku/manifest_d.xml
-ODM_MANIFEST_DE_FILES := $(DEVICE_PATH)/sku/manifest_de.xml
 ODM_MANIFEST_DN_FILES := $(DEVICE_PATH)/sku/manifest_dn.xml
 ODM_MANIFEST_N_FILES := $(DEVICE_PATH)/sku/manifest_n.xml
 
