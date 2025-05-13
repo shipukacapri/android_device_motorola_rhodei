@@ -38,10 +38,6 @@ PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/audio/default_volume_tables.xml:$(TARGET_COPY_OUT_VENDOR)/etc/default_volume_tables.xml \
     $(LOCAL_PATH)/audio/mixer_paths.xml:$(TARGET_COPY_OUT_VENDOR)/etc/mixer_paths.xml
 
-# Fingerprint
-PRODUCT_PACKAGES += \
-    android.hardware.biometrics.fingerprint@2.3-service.bangkk
-
 # FM
 TARGET_HAS_FM := true
 
