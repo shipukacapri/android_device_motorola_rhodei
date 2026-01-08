@@ -1,15 +1,29 @@
 # Audio
-persist.vendor.audio.fluence.voicecomm=false
+persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 
 # Camera
-persist.vendor.camera.physical.num=4
+persist.vendor.camera.physical.num=3
+ro.camera.cfa.packagelist=com.motorola.coresettingsext,com.motorola.camera2,com.motorola.camera3,com.motorola.actions
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.camera3,com.motorola.motocit
+vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings
+
+# Dalvik
+dalvik.vm.dex2oat-threads=6
 
 # Display
+debug.sf.enable_gl_backpressure=1
+debug.sf.force_populate_color_modes=true
 debug.sf.supports_desired_transition_mode=1
 debug.sf.treat_170m_as_sRGB=1
-ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.set_idle_timer_ms=250
+ro.surface_flinger.set_touch_timer_ms=1000
+ro.surface_flinger.use_smart_90_for_video=true
+vendor.display.enable_optimize_refresh=1
+vendor.display.hwc_disable_hdr=1
+vendor.display.use_smooth_motion=1
 
 # Radio
+ro.telephony.default_network=33,33
 ro.vendor.radio.imei.sv=26
