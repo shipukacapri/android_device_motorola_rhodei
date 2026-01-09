@@ -8,5 +8,5 @@ PRODUCT_MAKEFILES := \
 
 
 COMMON_LUNCH_CHOICES:= \
-    lineage_rhodei-userdebug
+    lineage_rhodei-userdebug \
     lineage_rhodei-eng
