@@ -285,38 +285,35 @@ vendor/firmware/ILITEK_FW
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6052.csv
 vendor/firmware/tm_novatek_ts_fw.bin
 vendor/firmware/tm_novatek_ts_mp.bin
-vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
-vendor/lib/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so
-vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
-vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
-system_ext/etc/permissions/com.motorola.imagertuning5.rhodei.xml
+# vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
+# vendor/lib/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so
+# vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
+# vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
+# system_ext/etc/permissions/com.motorola.imagertuning5.rhodei.xml
 
 # Display
-vendor/lib64/com.motorola.hardware.display.panel@1.0.so
-vendor/lib64/com.motorola.hardware.display.panel@1.1.so
-vendor/lib64/hw/com.motorola.hardware.display.panel@1.1-impl.so
-vendor/lib64/hw/displaypanel.default.so
+# vendor/lib64/com.motorola.hardware.display.panel@1.0.so
+# vendor/lib64/com.motorola.hardware.display.panel@1.1.so
+# vendor/lib64/hw/com.motorola.hardware.display.panel@1.1-impl.so
+# vendor/lib64/hw/displaypanel.default.so
 
-# Dolby
-vendor/lib64/vendor.dolby.hardware.dms@2.0.so
-vendor/lib64/vendor.dolby.hardware.dms@2.0-impl.so
 
 # FDR Control
-vendor/lib64/motorola.hardware.fdrcontrol@1.0.so
-vendor/lib64/motorola.hardware.fdrcontrol@1.1.so
-vendor/lib64/motorola.hardware.fdrcontrol@1.2.so
+# vendor/lib64/motorola.hardware.fdrcontrol@1.0.so
+# vendor/lib64/motorola.hardware.fdrcontrol@1.1.so
+# vendor/lib64/motorola.hardware.fdrcontrol@1.2.so
 
 
 # FM Radio
-vendor/lib64/motorola.hardware.fmradio@1.0.so
+#vendor/lib64/motorola.hardware.fmradio@1.0.so
 
 # Health
-system/lib64/motorola.hardware.health.storage@1.0.so
-vendor/bin/hw/motorola.hardware.health.storage@1.0-service
-vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
+# system/lib64/motorola.hardware.health.storage@1.0.so
+# vendor/bin/hw/motorola.hardware.health.storage@1.0-service
+# vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
 
 # Input
-vendor/lib64/motorola.hardware.input@1.0.so
+# vendor/lib64/motorola.hardware.input@1.0.so
 
 
 # Vibrator
