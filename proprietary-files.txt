@@ -231,7 +231,6 @@ vendor/usr/idc/uinput-egis.idc
 vendor/usr/idc/uinput-focal.idc
 vendor/usr/keylayout/uinput-egis.kl
 vendor/usr/keylayout/uinput-focal.kl
-vendor/lib64/com.motorola.hardware.biometric.fingerprint@1.0.so
 
 # HotwordEnrollment
 product/priv-app/HotwordEnrollmentOKGoogleHEXAGON/HotwordEnrollmentOKGoogleHEXAGON.apk
