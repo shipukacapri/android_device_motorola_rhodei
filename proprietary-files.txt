@@ -285,7 +285,7 @@ vendor/etc/thermal-engine.conf
 vendor/firmware/ILITEK_FW
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6052.csv
 vendor/firmware/tm_novatek_ts_fw.bin
-vendor/firmware/tm_novatek_ts_mp.bin# Camera
+vendor/firmware/tm_novatek_ts_mp.bin
 vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
 vendor/lib/camera/com.mot.eeprom.mot_gt24p64e_ov16a1q_eeprom.so
 vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
