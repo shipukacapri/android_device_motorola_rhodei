@@ -24,6 +24,10 @@ vendor/firmware/aw_skt.bin
 
 # Audio libraries
 vendor/lib/libacdbloader.so
+system/lib64/android.media.audio.common.types-V1-cpp.so
+system/lib64/android.media.audio.common.types-V1-ndk.so
+system/lib/android.media.audio.common.types-V1-cpp.so
+system/lib/android.media.audio.common.types-V1-ndk.so
 
 # Camera
 vendor/lib64/camera/fdconfigpreview.bin
