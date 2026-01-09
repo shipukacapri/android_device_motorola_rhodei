@@ -315,8 +315,6 @@ vendor/lib64/motorola.hardware.fmradio@1.0.so
 system/lib64/motorola.hardware.health.storage@1.0.so
 vendor/bin/hw/motorola.hardware.health.storage@1.0-service
 vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
-vendor/lib64/motorola.hardware.health@2.0.so
-vendor/lib64/motorola.hardware.health.storage@1.0.so
 
 # Input
 vendor/lib64/motorola.hardware.input@1.0.so
