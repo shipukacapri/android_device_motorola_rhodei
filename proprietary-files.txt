@@ -307,9 +307,9 @@ vendor/firmware/tm_novatek_ts_mp.bin
 #vendor/lib64/motorola.hardware.fmradio@1.0.so
 
 # Health
-system/lib64/motorola.hardware.health.storage@1.0.so
-vendor/bin/hw/motorola.hardware.health.storage@1.0-service
-vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
+# system/lib64/motorola.hardware.health.storage@1.0.so
+# vendor/bin/hw/motorola.hardware.health.storage@1.0-service
+# vendor/etc/init/motorola.hardware.health.storage@1.0-service.rc
 
 # Input
 # vendor/lib64/motorola.hardware.input@1.0.so
