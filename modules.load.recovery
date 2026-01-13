@@ -6,7 +6,6 @@ mmi_annotate.ko
 sensors_class.ko
 qpnp_adaptive_charge.ko
 touchscreen_mmi.ko
-tm_novatek_ts_fw.bin
 nova_0flash_mmi.ko
 sm5602_fg_mmi.ko
 tcpc_class.ko
