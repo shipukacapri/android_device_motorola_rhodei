@@ -282,6 +282,7 @@ vendor/etc/thermal-engine.conf
 # Touchscreen firmware
 vendor/firmware/ILITEK_FW
 vendor/firmware/NT36xxx_MP_Setting_Criteria_6052.csv
+vendor/firmware/ipa_fws.mdt
 vendor/firmware/tm_novatek_ts_fw.bin
 vendor/firmware/tm_novatek_ts_mp.bin
 # vendor/lib/camera/com.mot.eeprom.mot_gt24p128e_s5kjn1_eeprom.so
