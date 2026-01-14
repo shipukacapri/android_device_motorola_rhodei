@@ -237,11 +237,6 @@ product/priv-app/HotwordEnrollmentXGoogleHEXAGON/HotwordEnrollmentXGoogleHEXAGON
 system_ext/etc/permissions/com.android.hotwordenrollment.common.util.xml
 system_ext/framework/com.android.hotwordenrollment.common.util.jar
 
-# Lights
-vendor/bin/hw/android.hardware.lights-service.qti
-vendor/etc/init/android.hardware.lights-qti.rc
-vendor/etc/vintf/manifest/android.hardware.lights-qti.xml
-
 # NFC - configs
 vendor/etc/libnfc-nxp-pnscr.conf
 vendor/etc/libnfc-qrd-SN100.conf

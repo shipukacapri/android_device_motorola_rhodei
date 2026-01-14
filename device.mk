@@ -88,6 +88,10 @@ PRODUCT_COPY_FILES += \
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
 # WiFi firmware symlinks
 PRODUCT_PACKAGES += \
     firmware_WCNSS_mot_cfg.ini_symlink
