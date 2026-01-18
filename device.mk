@@ -102,5 +102,4 @@ $(call inherit-product, vendor/motorola/rhodei/rhodei-vendor.mk)
 # Touch firmware for recovery
 PRODUCT_COPY_FILES += \
     vendor/motorola/rhodei/proprietary/vendor/firmware/tm_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/tm_novatek_ts_fw.bin \
-    vendor/motorola/rhodei/proprietary/vendor/firmware/tm_novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/tm_novatek_ts_mp.bin \
-    vendor/motorola/rhodei/proprietary/vendor/firmware/ipa_fws.mdt:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/ipa_fws.mdt
+    vendor/motorola/rhodei/proprietary/vendor/firmware/tm_novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/tm_novatek_ts_mp.bin

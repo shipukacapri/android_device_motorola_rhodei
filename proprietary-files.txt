@@ -329,9 +329,9 @@ vendor/firmware/tm_novatek_ts_mp.bin
 
 
 # RIL
-vendor/firmware/ipa_fws.b00
-vendor/firmware/ipa_fws.b01
-vendor/firmware/ipa_fws.b02
-vendor/firmware/ipa_fws.b03
-vendor/firmware/ipa_fws.b04
-vendor/firmware/ipa_fws.mdt
+# vendor/firmware/ipa_fws.b00
+# vendor/firmware/ipa_fws.b01
+# vendor/firmware/ipa_fws.b02
+# vendor/firmware/ipa_fws.b03
+# vendor/firmware/ipa_fws.b04
+# vendor/firmware/ipa_fws.mdt
