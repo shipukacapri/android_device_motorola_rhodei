@@ -183,9 +183,13 @@ vendor/lib64/camera/com.qti.flash.ocp81373.so
 
 # Camera - Motorola
 vendor/bin/hw/motorola.hardware.camera.desktop@2.0-service
+vendor/bin/hw/motorola.hardware.camera.imgtuner@1.0-service
 vendor/etc/init/motorola.hardware.camera.desktop@2.0-service.rc
+vendor/etc/init/motorola.hardware.camera.imgtuner@1.0-service.rc
 vendor/lib64/motorola.hardware.camera.desktop@1.0.so
 vendor/lib64/motorola.hardware.camera.desktop@2.0.so
+vendor/lib64/motorola.hardware.camera.imgtuner@1.0.so
+vendor/lib64/hw/motorola.hardware.camera.imgtuner@1.0-impl.so
 system_ext/etc/permissions/com.motorola.imagertuning5.rhodei.xml
 
 
