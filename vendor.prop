@@ -20,3 +20,6 @@ ro.surface_flinger.set_idle_timer_ms=250
 
 # Radio
 ro.vendor.radio.imei.sv=26
+persist.vendor.radio.jbims=1
+persist.vendor.vt.supported=1
+persist.vendor.sys.cnd.iwlan=1
