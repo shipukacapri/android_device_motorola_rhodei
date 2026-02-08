@@ -38,6 +38,7 @@ on post-fs-data
     chown vendor_pwric vendor_pwric /sys/class/power_supply/cp-standalone/force_chg_auto_enable
 
 on fs
+    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/leds_aw99703.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/sm5350_bl.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/nova_0flash_mmi.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_charger.ko
