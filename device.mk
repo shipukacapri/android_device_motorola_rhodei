@@ -10,6 +10,11 @@ TARGET_SCREEN_WIDTH := 1080
 # Screen
 TARGET_SCREEN_DENSITY := 400
 
+# Infinity Specific Properties
+PRODUCT_SYSTEM_PROPERTIES += \
+    ro.infinity.soc=Snapdragon_695 \
+    ro.infinity.camera=50MP+8MP+2MP+16MP
+
 # AAPT
 PRODUCT_AAPT_CONFIG := normal
 PRODUCT_AAPT_PREF_CONFIG := 400dpi
