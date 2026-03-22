@@ -1,0 +1,9 @@
+# device props MISTIFY
+ro.mist.display=1080 x 2400 , 120 hz
+ro.mist.battery=5000mah
+ro.mist.soc=Snapdragon® 695
+ro.mist.camera=50MP + 8MP + 2MP
+ro.mist.front=16MP
+ro.mist.platform=SM6375
+ro.mist.screen=6.5' IPS LCD
+ro.mist.device.name=Motorola moto g62 5G
