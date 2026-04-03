@@ -20,5 +20,7 @@ PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
 PRODUCT_MODEL := moto g62 5G
 
+INFINITY_MAINTAINER := Shipu
+
 PRODUCT_GMS_CLIENTID_BASE := android-motorola
 
