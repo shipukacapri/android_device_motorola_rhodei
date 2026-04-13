@@ -83,12 +83,10 @@ $(call soong_config_set,qtipower,tap_to_wake_node,/sys/devices/platform/soc/4a80
 
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.moto_ext
+    sensors.rhodei
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
-
-$(call soong_config_set_bool,moto_sensors,udfps,false)
 
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
