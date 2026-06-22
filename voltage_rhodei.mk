@@ -15,6 +15,7 @@ $(call inherit-product, device/motorola/rhodei/device.mk)
 $(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
 TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
 
 PRODUCT_NAME := voltage_rhodei
 PRODUCT_DEVICE := rhodei
