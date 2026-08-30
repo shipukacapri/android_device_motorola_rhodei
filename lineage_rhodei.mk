@@ -30,7 +30,10 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 # Disable kernel VINTF enforcement for 5.4 kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
 
+# Rising Flags
+WITH_GMS := true
 RISING_MAINTAINER := Shipu
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingMaintainer="Shipu" \
