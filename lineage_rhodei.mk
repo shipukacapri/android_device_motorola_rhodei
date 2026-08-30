@@ -29,3 +29,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Disable kernel VINTF enforcement for 5.4 kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
+
+RISING_MAINTAINER := Shipu
+
+PRODUCT_BUILD_PROP_OVERRIDES += \
+    RisingMaintainer="Shipu" \
+    RisingChipset="Snapdragon 695 5G"
