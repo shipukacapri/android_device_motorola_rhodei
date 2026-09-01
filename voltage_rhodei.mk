@@ -11,10 +11,13 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 # Inherit from rhodei device
 $(call inherit-product, device/motorola/rhodei/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common VoltageOS stuff.
+$(call inherit-product, vendor/voltage/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rhodei
+TARGET_BOOT_ANIMATION_RES := 1080
+TARGET_FACE_UNLOCK_SUPPORTED := true
+
+PRODUCT_NAME := voltage_rhodei
 PRODUCT_DEVICE := rhodei
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -29,12 +32,3 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 # Disable kernel VINTF enforcement for 5.4 kernel
 PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
-
-# Rising Flags
-WITH_GMS := true
-RISING_MAINTAINER := Shipu
-TARGET_ENABLE_BLUR := true
-
-PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="Shipu" \
-    RisingChipset="Snapdragon 695 5G"
