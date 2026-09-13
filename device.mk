@@ -30,7 +30,8 @@ PRODUCT_PACKAGES += \
     LineageApertureAppDevice \
     LineageSystemUIDevice \
     SystemUIResDevice \
-    WifiResDevice
+    WifiResDevice \
+    InfinityUpdater
 
 # Audio
 PRODUCT_PACKAGES += \
