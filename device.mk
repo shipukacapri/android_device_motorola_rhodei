@@ -32,6 +32,9 @@ PRODUCT_PACKAGES += \
     SystemUIResDevice \
     WifiResDevice
 
+# Overlay Voltage Maintainer
+PRODUCT_PACKAGE_OVERLAYS += $(LOCAL_PATH)/overlay-voltage
+
 # Audio
 PRODUCT_PACKAGES += \
     firmware_aw_cali.bin_symlink
