@@ -8,13 +8,19 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/core_64_bit.mk)
 TARGET_SUPPORTS_OMX_SERVICE := false
 $(call inherit-product, $(SRC_TARGET_DIR)/product/full_base_telephony.mk)
 
-# Inherit from rhodep device
+# Inherit from rhodei device
 $(call inherit-product, device/motorola/rhodei/device.mk)
 
-# Inherit some common Lineage stuff.
-$(call inherit-product, vendor/lineage/config/common_full_phone.mk)
+# Inherit some common InfinityX stuff.
+$(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
-PRODUCT_NAME := lineage_rhodei
+# Infinity Maintainer
+INFINITY_MAINTAINER := Shipu
+
+# Whether Including Google Apps
+WITH_GAPPS := true
+
+PRODUCT_NAME := infinity_rhodei
 PRODUCT_DEVICE := rhodei
 PRODUCT_MANUFACTURER := motorola
 PRODUCT_BRAND := motorola
@@ -26,3 +32,6 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     BuildDesc="rhodei_g-user 13 T1SSIS33.1-75-7-16 3686b-585454 release-keys" \
     BuildFingerprint=motorola/rhodei_g/rhodei:13/T1SSIS33.1-75-7-16/3686b-585454:user/release-keys \
     DeviceProduct=rhodei_g
+
+# Disable kernel VINTF enforcement for 5.4 kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false

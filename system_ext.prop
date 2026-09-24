@@ -1,2 +1,9 @@
 # Display
 sys.brightness.disable_gamma_conversion=true
+
+# Infinity Specific Properties
+ro.product.marketname=Motorola Moto G62 (India) 5G
+ro.infinity.soc=Snapdragon 695 5G
+ro.infinity.camera=50MP + 8MP + 2MP + 16MP
+ro.infinity.battery=5000 mAh
+ro.infinity.display=1080 x 2400, IPS LCD, 120Hz
