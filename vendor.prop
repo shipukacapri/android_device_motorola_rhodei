@@ -1,15 +1,27 @@
 # Audio
-persist.vendor.audio.fluence.voicecomm=false
+persist.vendor.audio.fluence.voicecomm=true
 persist.vendor.audio.voicecall.speaker.stereo=true
 
 # Camera
+persist.vendor.camera.expose.aux=1
 persist.vendor.camera.physical.num=4
+persist.vendor.camera.privapp.list=org.codeaurora.snapcam
+camera.disable_zsl_mode=1
+ro.camera.cfa.packagelist=com.motorola.coresettingsext,com.motorola.camera2,com.motorola.camera3,com.motorola.actions,org.lineageos.aperture
+vendor.camera.aux.packagelist=org.codeaurora.snapcam,com.motorola.camera3,com.motorola.motocit,org.lineageos.aperture
+vendor.camera.aux.packagelist2=com.motorola.ccc,com.android.settings,org.lineageos.aperture
+
+# Dalvik
+dalvik.vm.dex2oat-threads=6
 
 # Display
 debug.sf.supports_desired_transition_mode=1
 debug.sf.treat_170m_as_sRGB=1
-ro.surface_flinger.has_wide_color_display=true
+ro.surface_flinger.has_wide_color_display=false
 ro.surface_flinger.set_idle_timer_ms=250
 
 # Radio
 ro.vendor.radio.imei.sv=26
+persist.vendor.radio.jbims=1
+persist.vendor.vt.supported=1
+persist.vendor.sys.cnd.iwlan=1

@@ -2,9 +2,13 @@ on post-fs
     # Sensors
     chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled
     chown system system /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_pressed
+    chmod 0660 /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled
+    chmod 0660 /sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_pressed
 
 on fs
-    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/goodix_brl_mmi.ko
+    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/leds_aw99703.ko
+    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/sm5350_bl.ko
+    insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/nova_0flash_mmi.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_charger.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/bq2597x_mmi_iio.ko
     insmod /vendor/lib/modules/${ro.vendor.mot.gki.path}/mmi_discrete_charger_class.ko

@@ -147,7 +147,7 @@
     </integer-array>
 
     <!-- MMS user agent string -->
-    <string name="config_mms_user_agent" translatable="false">motog825g</string>
+    <string name="config_mms_user_agent" translatable="false">motog625g</string>
 
     <!-- MMS user agent prolfile url -->
     <string name="config_mms_user_agent_profile_url" translatable="false">http://uaprof.motorola.com/phoneconfig/motov1/Profile/motov1.rdf</string>
@@ -158,7 +158,7 @@
     <!-- Control whether the always on display mode is available. This should only be enabled on
          devices where the display has been tuned to be power efficient in DOZE and/or DOZE_SUSPEND
          states. -->
-    <bool name="config_dozeAlwaysOnDisplayAvailable">true</bool>
+    <bool name="config_dozeAlwaysOnDisplayAvailable">false</bool>
 
     <!-- Control whether the always on display mode is enabled by default. This value will be used
          during initialization when the setting is still null. -->
@@ -250,4 +250,10 @@
     <!-- Default refresh rate in the zone defined by brightness and ambient thresholds.
          If non-positive, then the refresh rate is unchanged even if thresholds are configured. -->
     <integer name="config_defaultRefreshRateInZone">120</integer>
+
+    <!-- Whether this device is supporting the software microphone toggle -->
+    <bool name="config_supportsMicToggle">true</bool>
+
+    <!-- Whether this device is supporting the camera toggle -->
+    <bool name="config_supportsCamToggle">true</bool>
 </resources>

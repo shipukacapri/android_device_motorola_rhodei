@@ -18,6 +18,9 @@ PRODUCT_AAPT_PREBUILT_DPI := xxxhdpi xxhdpi xhdpi hdpi
 # Shipping API level
 PRODUCT_SHIPPING_API_LEVEL := 31
 
+# Device Framework Compatibility Matrix
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE := $(LOCAL_PATH)/framework_compatibility_matrix.xml
+
 # Inherit from motorola sm6375-common
 $(call inherit-product, device/motorola/sm6375-common/common.mk)
 
@@ -31,7 +34,6 @@ PRODUCT_PACKAGES += \
 
 # Audio
 PRODUCT_PACKAGES += \
-    audio_amplifier.lahaina \
     firmware_aw_cali.bin_symlink
 
 PRODUCT_COPY_FILES += \
@@ -67,26 +69,40 @@ PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/android.hardware.nfc.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/android.hardware.nfc.xml \
     frameworks/native/data/etc/com.nxp.mifare.xml:$(TARGET_COPY_OUT_VENDOR)/etc/permissions/com.nxp.mifare.xml
 
-DEVICE_SKUS := b d
+DEVICE_SKUS := b d dn n
 
 PRODUCT_COPY_FILES += \
-$(foreach DEVICE_SKU, $(DEVICE_SKUS), \
+$(foreach DEVICE_SKU, b d, \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.hce.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hce.xml \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.hcef.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.hcef.xml \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.uicc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.uicc.xml \
     $(LOCAL_PATH)/permissions/unavail.android.hardware.nfc.xml:$(TARGET_COPY_OUT_ODM)/etc/permissions/sku_$(DEVICE_SKU)/unavail.android.hardware.nfc.xml)
 
+# Power
+$(call soong_config_set,qtipower,tap_to_wake_node,/sys/devices/platform/soc/4a80000.spi/spi_master/spi0/spi0.0/touchscreen/primary/double_tap_enabled)
+
 # Sensors
 PRODUCT_PACKAGES += \
-    sensors.moto_ext
+    sensors.rhodei
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/sensors/hals.conf:$(TARGET_COPY_OUT_VENDOR)/etc/sensors/hals.conf
 
-$(call soong_config_set_bool,moto_sensors,udfps,false)
-
 # Soong namespaces
 PRODUCT_SOONG_NAMESPACES += $(LOCAL_PATH)
 
+# Lights
+PRODUCT_PACKAGES += \
+    android.hardware.light-service.lineage
+
+# WiFi firmware symlinks
+PRODUCT_PACKAGES += \
+    firmware_WCNSS_mot_cfg.ini_symlink
+
 # Inherit from vendor blobs
-$(call inherit-product, vendor/motorola/rhodep/rhodep-vendor.mk)
+$(call inherit-product, vendor/motorola/rhodei/rhodei-vendor.mk)
+
+# Touch firmware for recovery
+PRODUCT_COPY_FILES += \
+    vendor/motorola/rhodei/proprietary/vendor/firmware/tm_novatek_ts_fw.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/tm_novatek_ts_fw.bin \
+    vendor/motorola/rhodei/proprietary/vendor/firmware/tm_novatek_ts_mp.bin:$(TARGET_COPY_OUT_VENDOR_RAMDISK)/vendor/firmware/tm_novatek_ts_mp.bin
