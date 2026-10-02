@@ -4,4 +4,4 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/voltage_rhodei.mk
+    $(LOCAL_DIR)/lineage_rhodei.mk
