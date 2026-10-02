@@ -30,6 +30,9 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 #RisingOSRevived Flags
 RISING_MAINTAINER := Shipu
+WITH_GMS := true
+TARGET_USES_PICO_GAPPS := true
+TARGET_ENABLE_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingMaintainer="Shipu" \
