@@ -14,6 +14,8 @@ $(call inherit-product, device/motorola/rhodei/device.mk)
 # Inherit some common LineageOS stuff.
 $(call inherit-product, vendor/lineage/config/common_full_phone.mk)
 
+# private key signing
+-include vendor/lineage-priv/keys/keys.mk
 
 PRODUCT_NAME := lineage_rhodei
 PRODUCT_DEVICE := rhodei
@@ -37,3 +39,6 @@ TARGET_ENABLE_BLUR := true
 PRODUCT_BUILD_PROP_OVERRIDES += \
     RisingMaintainer="Shipu" \
     RisingChipset="Snapdragon 695 5G"
+
+# Disable kernel VINTF enforcement for 5.4 kernel
+PRODUCT_OTA_ENFORCE_VINTF_KERNEL_REQUIREMENTS := false
