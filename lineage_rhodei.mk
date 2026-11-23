@@ -31,13 +31,13 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     DeviceProduct=rhodei_g
 
 #RisingOSRevived Flags
-RISING_MAINTAINER := Shipu
+RISING_MAINTAINER := Dileep
 WITH_GMS := true
 TARGET_USES_PICO_GAPPS := true
 TARGET_ENABLE_BLUR := true
 
 PRODUCT_BUILD_PROP_OVERRIDES += \
-    RisingMaintainer="Shipu" \
+    RisingMaintainer="Dileep" \
     RisingChipset="Snapdragon 695 5G"
 
 # Disable kernel VINTF enforcement for 5.4 kernel
