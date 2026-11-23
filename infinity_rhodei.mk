@@ -15,7 +15,7 @@ $(call inherit-product, device/motorola/rhodei/device.mk)
 $(call inherit-product, vendor/infinity/config/common_full_phone.mk)
 
 # Infinity Maintainer
-INFINITY_MAINTAINER := Shipu
+INFINITY_MAINTAINER := Dileep
 
 # Whether Including Google Apps
 WITH_GAPPS := true
